@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Historial de Escaneos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="scanHistory.length > 0">
+    <ion-item *ngFor="let scan of scanHistory">
+      <ion-label>{{ scan }}</ion-label>
+      <ion-button *ngIf="isGeolocation(scan)" (click)="showOnMap(scan)">
+        Ver en el Mapa
+      </ion-button>
+    </ion-item>
+  </ion-list>
+
+  <div *ngIf="scanHistory.length === 0">
+    No hay historial disponible.
+  </div>
+</ion-content>

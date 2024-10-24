@@ -1,0 +1,23 @@
+<!-- src/app/pages/user/user.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <!-- Botón para volver atrás -->
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Información del Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Datos Básicos del Usuario</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p><strong>Nombre:</strong> {{userName}}</p>
+      <p><strong>Email:</strong> {{userEmail}}</p>
+      <!-- Puedes agregar más información -->
+    </ion-card-content>
+  </ion-card>
+</ion-content>

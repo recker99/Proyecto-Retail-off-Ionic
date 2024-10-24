@@ -1,0 +1,9 @@
+ion-content {  
+  --background: transparent; /* Evita que el fondo oculte el mapa */  
+  height: 100%; /* O en función de tu diseño */  
+}  
+
+#map {  
+  height: 100%; /* Asegúrate de que el mapa ocupa toda la altura */  
+  width: 100%; /* Asegúrate de que el mapa ocupa todo el ancho */  
+}

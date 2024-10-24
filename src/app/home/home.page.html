@@ -1,0 +1,30 @@
+<ion-header>  
+  <ion-toolbar>  
+    <ion-buttons slot="start">  
+      <ion-menu-button></ion-menu-button>  
+    </ion-buttons>  
+    <ion-title>Retail Off</ion-title>  
+  </ion-toolbar>  
+</ion-header>  
+
+<ion-content>  
+  <ion-card>  
+    <ion-card-header *ngIf="userName">  
+      <ion-card-title>Bienvenido {{ userName }}</ion-card-title>  
+    </ion-card-header>  
+    <ion-card-content>  
+      <img src="assets/img/home.jpg" alt="Imagen de la Empresa" class="company-image" />  
+      <br>  
+      <p>Somos una empresa con más de 20 años de experiencia en la industria del retail.</p>  
+      <p>Estos son algunos de nuestros proyectos destacados:</p>  
+      <ul>  
+        <li>Proyecto 1: Aplicación de e-commerce</li>  
+        <li>Proyecto 2: Sistema de inventarios</li>  
+        <li>Proyecto 3: Plataforma de fidelización de clientes</li>  
+      </ul>  
+    </ion-card-content>  
+  </ion-card>  
+
+  <ion-button *ngIf="!isLoggedIn" expand="block" routerLink="/login">Iniciar Sesión</ion-button>  
+  <ion-button *ngIf="!isLoggedIn" expand="block" routerLink="/register">Registrarse</ion-button>   
+</ion-content>
